@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-    <Metadata>
-        <Identity Id="9da28329-f9d5-4f18-91c3-d3285b103d1a" Version="1.4" Language="en-US" Publisher="Mads Kristensen" />
-        <DisplayName>Learn the Shortcut</DisplayName>
-        <Description xml:space="preserve">Shows how easy you can make the same action using only the keyboard. Displays the keyboard shortcut for any command that you execute to help you learn the shortcuts you need the most.</Description>
-        <MoreInfo>https://github.com/madskristensen/ShowTheShortcut</MoreInfo>
-        <License>Resources\LICENSE</License>
-        <ReleaseNotes>https://github.com/madskristensen/ShowTheShortcut/blob/master/CHANGELOG.md</ReleaseNotes>
-        <Icon>Resources\Icon.png</Icon>
-        <PreviewImage>Resources\Preview.png</PreviewImage>
-        <Tags>keyboard, shortcut, commands</Tags>
-    </Metadata>
-    <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="14.0" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="15.0" />
-    </Installation>
-    <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-        <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
-    </Dependencies>
-    <Assets>
-        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-    </Assets>
-</PackageManifest>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="9da28329-f9d5-4f18-91c3-d3285b103d1a">
+    <Name>Learn the Shortcut</Name>
+    <Author>Mads Kristensen</Author>
+    <Version>1.4.23</Version>
+    <Description xml:space="preserve">Shows how easy you can make the same action using only the keyboard. Displays the keyboard shortcut for any command that you execute to help you learn the shortcuts you need the most.</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>https://github.com/madskristensen/ShowTheShortcut</MoreInfoUrl>
+    <License>Resources\LICENSE</License>
+    <ReleaseNotes>https://github.com/madskristensen/ShowTheShortcut/blob/master/CHANGELOG.md</ReleaseNotes>
+    <Icon>Resources\Icon.png</Icon>
+    <PreviewImage>Resources\Preview.png</PreviewImage>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+        <IsolatedShell Version="7.0">AtmelStudio</IsolatedShell>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.5" />
+  </Identifier>
+  <References />
+  <Content>
+    <VsPackage>ShowTheShortcut.pkgdef</VsPackage>
+  </Content>
+</Vsix>
